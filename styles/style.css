@@ -1,0 +1,146 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  /* font-style: normal; */
+}
+.header{
+
+}
+.container{
+    max-width: 80%;
+    margin: auto;
+}
+.nav-logo h2{
+    font-weight: 700;
+}
+.nav-bar,
+.nav-logo,
+.links
+{
+    display: flex;
+}
+.nav-bar{
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-img {
+    width: 100%;
+}
+.links{
+    /* flex-direction: row; */
+
+}
+.links li{
+    list-style: none;
+    margin-right: 32px;
+}
+.links li a{
+    text-decoration: none;
+    /* color: rgb(254, 163, 1); */
+    /* font-weight: 700; */
+}
+
+.links li .link-1{
+    /* text-decoration: none; */
+    color: rgb(254, 163, 1);
+    font-weight: 700;
+}
+.links li .link-2{
+    color: rgb(1, 172, 253);
+    /* font-size: 20px; */
+    font-weight: 500;
+}
+.links li .link-3{
+    color: rgb(5, 212, 223);
+    /* color: rgb(5, 212, 223); */
+    font-weight: 500;
+}
+.links li .link-4{
+    color: rgb(93, 88, 239);
+    /* color: rgb(5, 212, 223); */
+    font-weight: 500;
+}
+.header-btn button{
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    background: rgb(254, 163, 1);
+    padding:6px 30px;
+}
+/* hero kids */
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.banner-image img {
+    width: 100%;
+}
+.banner-text {
+    /* max-width: 50%; */
+}
+.banner-image{
+    /* max-width: 43%; */
+    margin-left: 7%;
+}
+.banner-text h2 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+.banner-text .empower {
+    color: rgb(254, 163, 1);
+
+}
+.banner-text .vision{
+    color: rgb(1, 172, 253);
+}
+.banner-text p {
+    color: rgb(17, 17, 17);
+    font-size: 1rem;
+}
+.banner-text button {
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    padding:6px 30px;
+    background: rgb(17, 17, 17);
+}
+/* standard */
+.card-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-parent .cardbox-1{
+    text-align: center;
+}
+.card-parent .cardbox-2{
+    text-align: center;
+}
+.card-parent .cardbox-3{
+    text-align: center;
+}
+
+/* media query */
+@media  screen and (max-width:576px) {
+  .links,
+  .header-btn{
+    display: none;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    /* max-width: 100%; */
+    justify-content: center;
+    text-align: center;
+
+  }
+  .banner-text h2 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+}
