@@ -271,7 +271,9 @@
 /* footer */
 .footer-area {
     background: rgb(1, 172, 253);
-    margin-bottom: 300px;
+    /* margin-bottom: 300px; */
+    padding: 100px 0;
+
 }
 .footer-parent{
     display: grid;
@@ -284,21 +286,63 @@
 }
 .education .edu-child {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+    align-items: center;
+}
+.education p{
+    /* width: 100%; */
+    color: rgb(255, 255, 255);
+    /* font-family: Quicksand; */
+    font-size: 1rem;
+    font-weight: 400;
+}
+.edu-child img {
+    /* width: 100%; */
+}
+.education h2{
+    color: rgb(255, 255, 255);
+    /* font-family: Quicksand; */
+    font-size: 2.5rem;
+    font-weight: 700;
+    /* letter-spacing: 0; */
+    line-height: 40px;
 }
 .school {
     /* text-align: center; */
-    margin-left: 60px ;
+    margin-left: 60px;
+
+}
+.school h3{
+    color: rgb(255, 255, 255);
+    margin-left: 40px;
+    /* margin-top: 13px; */
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 1.5rem;
 }
 .school ul {
     margin: 0;
 }
 .school ul li {
     list-style: none;
-    margin: 0;
+    margin-bottom: 20px ;
+    font-size: 1rem;
+    font-weight: 500;
 }
 .school ul li a {
     text-decoration: none;
+    color: rgb(255, 255, 255); ;
+}
+.touch {
+    margin-bottom: 110px;
+    margin-left: 50px;
+    /* text-align: right; */
+}
+.touch h3 {
+    color: rgb(255, 255, 255);
+    /* font-family: Quicksand; */
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 /* media query */
 @media  screen and (max-width:576px) {
@@ -347,4 +391,21 @@
     .multi-img img{
         width: 100%;
     }
+    /* footer  */
+    .footer-parent{
+        grid-template-columns: repeat(1,1fr);
+        /* text-align: left; */
+    }
+    .footer-area ul,
+    .footer-area li,
+    .school h3,
+    .school,
+    .touch {
+        padding: 0;
+        margin: 0;
+    }
+    .school h3 {
+        margin-bottom: 30px;
+    }
+
 }
