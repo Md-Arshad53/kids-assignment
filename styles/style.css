@@ -197,7 +197,7 @@ marquee{
 .cardbox .navyblue{
     color: rgb(135, 0, 255);
 }
-.chevron{
+.chevron {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -206,27 +206,23 @@ marquee{
     margin-bottom: 80px;
     align-items: center;
 }
-.right-chevron{
-    width: 30px;
-    height: 30px;
+.circle{
+    width: 50px;
+    height: 50px;
     border-radius: 50px;
-    /* padding-top: 10px; */
     background-color: orange;
-    /* display: inline-block; */
-    /* padding-top: 10px 10px 10px 10px; */
-    text-align:center ;
+    position: relative;
 }
-.left-chevron{
-    background-color: orange;
-    width: 30px;
-    height: 30px;
-    border-radius: 50px;
+.content{
+    position: absolute;
+    width: inherit;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align:center ;
 }
 .chevron i{
   color: white;
-    /* color: bisque; */
-    /* display: flex; */
-    /* align-items: center; */
 }
 /* story */
 .story {
